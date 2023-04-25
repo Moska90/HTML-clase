@@ -1,46 +1,33 @@
 body
 {
-    background-color: rgb(24, 24, 24);
+  width:100%;
+  height:100%;
+  background-image: url(/Images/fondo.jpg);
+  background-position-x: -81%;
 }
-
 .textoblanco{
     color: white;
 }
 .botoncabezera
 {
-    margin-left: 90%
+  text-align: bottom;
+  align-items: bottom;
 }
-
-
-
-
-.boton
+.darker
 {
-    margin-left: 75%;
-    margin-top: 2%;
+background-color: transparent;
+background: none;
 }
-.container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 4px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 8px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;}
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -8px) rotate(45deg);
-  }
+.leftmenu
+{
+  align-items: baseline ; 
+}
+.peque{
+  width: 300px;
+  height: 40px
+}
+.barrainfi
+{
+  width: 50px;
+  height: 50px;
+}
