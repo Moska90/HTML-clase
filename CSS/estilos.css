@@ -2,7 +2,6 @@ body{
   width:100%;
   height:100%;
   background-image: url(/Images/fondo.jpg);
-  background-position-x: -81%;
 }
 .textoblanco{
     color: white;
