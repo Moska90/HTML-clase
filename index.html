@@ -16,25 +16,39 @@
               <img class="img-fluid imglogo" src="/Images/logo.png" alt="Aqui tendria que haber un logo">
             </div>
             <div class="col-2"></div>
-            <nav class="navbar navbar-expand-sm navbar-dark col-3 leftmenu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse bg-dark " id="collapsibleNavbar">
-                  <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Operadores</a>
-                      <ul class="dropdown-menu bg-dark">
-                        <li class="nav-item bg-dark "><a class="nav-link" href="atacantes.html">Atacantes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="defensores.html">Defensores</a></li>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="mapas.html">Mapas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="modos.html">Modos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
                   </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
                 </div>
               </div>
             </nav>
