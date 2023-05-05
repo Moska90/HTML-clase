@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Split Image Example</title>
-	<style>
-		#split-image {
-			display: inline-block;
-			position: relative;
-			cursor: pointer;
-		}
-		#split-image img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-		#split-image .split {
-			position: absolute;
-			top: 0;
-			left: 50%;
-			width: 50%;
-			height: 100%;
-			overflow: hidden;
-			transition: all 0.5s ease;
-			transform: translateX(-50%);
-		}
-		#split-image .split img {
-			width: 200%;
-			height: auto;
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			transition: all 0.5s ease;
-		}
-		#split-image:hover .split {
-			width: 100%;
-		}
-		#split-image:hover .split img {
-			transform: translateX(-50%);
-		}
-	</style>
-</head>
-<body>
-	<div id="split-image">
-		<img src="Imagenes/logo.png">
-		<div class="split">
-			<img src="Imagenes/logo.png">
-		</div>
-		<div class="split">
-			<img src="Imagenes/logo.png">
-		</div>
-	</div>
-	<script>
-		const splits = document.querySelectorAll('.split');
-		splits.forEach(split => {
-			split.addEventListener('click', () => {
-				split.style.width = '0';
-				split.style.height = '0';
-				setTimeout(() => {
-					split.style.display = 'none';
-				}, 500);
-			});
-		});
-	</script>
+  <head>
+    <title>Split Image Example</title>
+    <style>
+      #split-image {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+      }
+      #split-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      #split-image .split {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        transform: translateX(-50%);
+      }
+      #split-image .split img {
+        width: 200%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+      }
+      #split-image:hover .split {
+        width: 100%;
+      }
+      #split-image:hover .split img {
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="split-image">
+      <img src="Images/logo.png">
+      <div class="split">
+        <img src="Images/logo.png">
+      </div>
+      <div class="split">
+        <img src="Images/logo.png">
+      </div>
+    </div>
+    <script>
+      const splits = document.querySelectorAll('.split');
+      splits.forEach(split => {
+        split.addEventListener('click', () => {
+          split.style.width = '0';
+          split.style.height = '0';
+          setTimeout(() => {
+            split.style.display = 'none';
+          }, 500);
+        });
+      });
+    </script>
 </body>
 </html>
