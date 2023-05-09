@@ -6,12 +6,23 @@ body{
 
 }
 
-
+.imagelogo
+{
+  width:260px;
+}
 .titulillo
 {
   font-family: serif;
   font-weight: 900;
   font-size: 8cap;
+  color: white;
+}
+.textillo
+{
+  font-family: serif;
+  font-weight: 900;
+  font-size: 8cap;
+  color: white;
 }
 .textoblanco{
     color: white;
@@ -46,4 +57,36 @@ background: none;
   height: 100px;
   background-color: solid black;
   color: solid black;
+}
+
+.hola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.image {
+  width: 350px;
+  height: 250px;
+  background-image: url('https://via.placeholder.com/350x250/00ff00/ffffff');
+  background-size: cover;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+.image1 {
+  width: 350px;
+  height: 250px;
+  cursor: pointer;
+  transition: all 1s ease;
+  background-image: url('https://via.placeholder.com/350x250/0000ff/ffffff');
+}
+.image2 {
+  width: 350px;
+  height: 250px;
+  cursor: pointer;
+  transition: all 1s ease;
+  background-image: url('https://via.placeholder.com/350x250/ff0000/ffffff');
 }
