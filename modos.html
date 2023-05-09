@@ -4,77 +4,76 @@
 	<title>Image Popup</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<style>
-.split-img {
-  position: relative;
-  width: 350px;
-  height: 250px;
-  overflow: hidden;
-}
-
-.split-left, .split-right {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.5s ease-out;
-}
-
-.split-left {
-  left: 0;
-}
-
-.split-right {
-  right: 0;
-}
-
-.split-left.active {
-  width: 0%;
-}
-
-.split-right.active {
-  width: 100%;
-}
-
-	</style>
 </head>
-<script>
-$(document).ready(function() {
-  $('#img-to-split').click(function() {
-    // Hide original image
-    $(this).hide();
-
-    // Get the source URL of the original image
-    var imgSrc = $(this).attr('src');
-
-    // Create left and right split images
-    var $splitLeft = $('<div class="split-left"></div>');
-    var $splitRight = $('<div class="split-right"></div>');
-
-    // Set background images for left and right split images
-    $splitLeft.css('background-image', 'url(' + imgSrc + ')');
-    $splitRight.css('background-image', 'url(' + imgSrc + ')');
-
-    // Add active class to animate left and right split images
-    $splitLeft.addClass('active');
-    $splitRight.addClass('active');
-
-    // Add left and right split images to container
-    $('#img-to-split').parent().append($splitLeft);
-    $('#img-to-split').parent().append($splitRight);
-  });
-});
-
-</script>
 <body>
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="https://via.placeholder.com/350x250" class="img-fluid" id="img-to-split" alt="Image to Split">
-      </div>
+  <div>
+    <style>
+      .hola {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+      .image {
+        width: 350px;
+        height: 250px;
+        background-image: url('https://via.placeholder.com/350x250/00ff00/ffffff');
+        background-size: cover;
+        cursor: pointer;
+        transition: all 1s ease;
+      }
+      .image:hover {
+        transform: scale(1.1);
+      }
+      .image1 {
+        width: 350px;
+        height: 250px;
+        cursor: pointer;
+        transition: all 1s ease;
+        background-image: url('https://via.placeholder.com/350x250/0000ff/ffffff');
+      }
+      .image2 {
+        width: 350px;
+        height: 250px;
+        cursor: pointer;
+        transition: all 1s ease;
+        background-image: url('https://via.placeholder.com/350x250/ff0000/ffffff');
+      }
+    </style>
+    <div class="hola">
+      <div class="image" onclick="splitImage()"></div>
     </div>
+    <script>
+      function splitImage() {
+        var image = document.querySelector('.image');
+        image.classList.add('image1');              
+        var newImage = document.createElement('div');
+        newImage.classList.add('image1');
+        newButton.setAttribute('href', 'atacantes.html');
+        image.parentNode.appendChild(newImage);
+
+        var newAnchor = document.createElement('a');
+        newAnchor.setAttribute('href', 'https://example.com'); // Replace 'https://example.com' with the desired URL
+
+        var newButton = document.createElement('button');
+        newButton.style.backgroundImage = 'url("path/to/image.jpg")'; // Replace 'path/to/image.jpg' with the path to your image
+        newButton.style.backgroundSize = 'cover'; // Adjust background size as needed
+        newButton.style.backgroundPosition = 'center'; // Adjust background position as needed
+
+        newAnchor.appendChild(newButton);
+        image.parentNode.appendChild(newAnchor);
+
+        image.remove();
+
+        setTimeout(function() {
+          newImage.style.width = '350px';
+          newImage1.style.width = '350px';
+          image.remove();
+        }, 400);
+      }
+    </script>
   </div>
 </body>
 </html>
+
+<!-- <div class="footer bg-dark"></div> -->

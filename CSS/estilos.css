@@ -3,8 +3,16 @@ body{
   height:100%;
   background-image: url(/Images/fondo.jpg);
   background-repeat: no-repeat;
+
 }
 
+
+.titulillo
+{
+  font-family: serif;
+  font-weight: 900;
+  font-size: 4cap;
+}
 .textoblanco{
     color: white;
 }

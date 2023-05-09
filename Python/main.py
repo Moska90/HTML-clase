@@ -1,13 +1,5 @@
-git add .
+print(["Ribera puta" for _ in range(10)])
 
-echo 'Enter the commit message:'
-read commitMessage
-
-git commit -m "$commitMessage"
-
-echo 'Enter the name of the branch:'
-read branch
-
-git push origin $branch
-
-read
+# <py-script src="Python/main.py"></py-script>
+# <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+# <script defer src="https://pyscript.net/latest/pyscript.js"></script> 

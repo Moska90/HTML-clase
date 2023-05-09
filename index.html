@@ -6,14 +6,12 @@
       <title>Tu prima</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-      <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
       <link rel="shortcut icon" href="./Images/logo.png">
       <link rel="stylesheet" href="CSS/estilos.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <script src="/JS/menu.js"></script>
     </head>
     <body>
-      <py-script src="Python/main.py"></py-script>
       <div class="container-fluid cabecera bg-dark">
         <div class="row">
             <div class="col-6">
@@ -52,13 +50,69 @@
                 </div>
               </div>
             </nav>
-        </div>
+            <div href="atacantes.html" style="background-image: url(/Images/logo.png);"></div>
+          </div>
         <div>
-          <img src="https://via.placeholder.com/350x250" class="img-fluid" id="img-to-split" alt="Image to Split">
-        </div>
-cszcsczcvvczczsszdcczczsz
+          <style>
+            .hola {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100px;
+            }
+            .image {
+              width: 350px;
+              height: 250px;
+              background-image: url('https://via.placeholder.com/350x250/00ff00/ffffff');
+              background-size: cover;
+              cursor: pointer;
+              transition: all 1s ease;
+            }
+            .image:hover {
+              transform: scale(1.1);
+            }
+            .image1 {
+              width: 350px;
+              height: 250px;
+              cursor: pointer;
+              transition: all 1s ease;
+              background-image: url('https://via.placeholder.com/350x250/0000ff/ffffff');
+            }
+            .image2 {
+              width: 350px;
+              height: 250px;
+              cursor: pointer;
+              transition: all 1s ease;
+              background-image: url('https://via.placeholder.com/350x250/ff0000/ffffff');
+            }
+          </style>
+          <div class="hola">
+            <div class="image" onclick="splitImage()"></div>
+          </div>
+          <script>
+            function splitImage() {
+              var image = document.querySelector('.image');
+              image.classList.add('image1');              
+              var newImage = document.createElement('div');
+              newImage.classList.add('image1');
+              newButton.setAttribute('href', 'atacantes.html');
+              image.parentNode.appendChild(newImage);
 
+              var newImage1 = document.createElement('div');
+              newImage1.classList.add('image2');
+              newButton.setAttribute('href', 'defensores.html');
+              image.parentNode.appendChild(newImage1);
+
+              image.remove();
+
+              setTimeout(function() {
+                newImage.style.width = '350px';
+                newImage1.style.width = '350px';
+                image.remove();
+              }, 400);
+            }
+          </script>
+        </div>
       </div>
-      <div class="footer bg-dark"></div>  
     </body>
 </html>
