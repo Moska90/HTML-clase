@@ -17,6 +17,15 @@ body{
   font-size: 100px;
   color: white;
 }
+
+.titulillo1
+{
+  font-family: serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: white;
+}
+
 .textillo
 {
   font-family: serif;
