@@ -19,7 +19,6 @@ function splitImage() {
     window.location.href = 'defensores.html'; // Reemplaza 'ruta/pagina.html' con la ruta de la página a la que deseas redirigir
     });
     image.parentNode.appendChild(newDiv);
-
     image.remove();
 
     setTimeout(function() {
