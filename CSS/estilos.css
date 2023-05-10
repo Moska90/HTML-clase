@@ -14,7 +14,7 @@ body{
 {
   font-family: serif;
   font-weight: 900;
-  font-size: 8cap;
+  font-size: 100px;
   color: white;
 }
 .textillo
@@ -90,5 +90,5 @@ background: none;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* set the height of your footer here */
+  height: 60px;
 }
