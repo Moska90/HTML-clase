@@ -21,7 +21,7 @@ body{
 {
   font-family: serif;
   font-weight: 900;
-  font-size: 8cap;
+  font-size: 100px;
   color: white;
 }
 .textoblanco{
@@ -47,8 +47,6 @@ background: none;
   height: 40px
 }
 
-
-
 .footer{
   width: 100%;
   height: 100px;
@@ -72,6 +70,7 @@ background: none;
 .image:hover {
   transform: scale(1.1);
 }
+
 .image1 {
   width: 350px;
   height: 250px;
@@ -85,4 +84,11 @@ background: none;
   cursor: pointer;
   transition: all 1s ease;
   background-image: url('https://via.placeholder.com/350x250/ff0000/ffffff');
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* set the height of your footer here */
 }
