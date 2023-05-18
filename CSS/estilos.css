@@ -1,10 +1,12 @@
 body{
   width:100%;
   height:100%;
-  background-image: url(/Images/fondo.jpg);
-  background-repeat: no-repeat;
+  background-image: url(https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg);
+  background-repeat: repeat;
   overflow-x: hidden;
+  font-family: "Lato", sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
 
 .imagelogo
 {
@@ -21,16 +23,24 @@ body{
 .titulillo1
 {
   font-family: serif;
-  font-weight: 900;
-  font-size: 50px;
+  font-weight: 600;
+  font-size: 25px;
   color: white;
+  text-underline-offset: none;
 }
 
 .textillo
 {
   font-family: serif;
-  font-weight: 900;
-  font-size: 100px;
+  font-weight: ;
+  font-size: 20px;
+  color: white;
+}
+.textillito
+{
+  font-family: serif;
+  font-weight: 90;
+  font-size: 17px;
   color: white;
 }
 .textoblanco{
@@ -56,48 +66,68 @@ background: none;
   height: 40px
 }
 
-.footer{
-  width: 100%;
-  height: 100px;
-  background-color: solid black;
-  color: solid black;
-}
-
 .hola {
   
   display: flex;
   height: 100px;
 }
-.image {
-  width: 350px;
-  height: 250px;
-  background-image: url('https://via.placeholder.com/350x250/00ff00/ffffff');
-  background-size: cover;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-.image:hover {
-  transform: scale(1.1);
+
+.iana 
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fiy7YExswMn1Cf13GUU9t/7bb697bf32c0d79c2852b354e3045fff/r6s-operator-iana.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
 }
 
-.image1 {
-  width: 350px;
-  height: 250px;
-  cursor: pointer;
-  transition: all 1s ease;
-  background-image: url('https://via.placeholder.com/350x250/0000ff/ffffff');
-}
-.image2 {
-  width: 350px;
-  height: 250px;
-  cursor: pointer;
-  transition: all 1s ease;
-  background-image: url('https://via.placeholder.com/350x250/ff0000/ffffff');
+:root {
+  --primary: #e02424;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+.justify {
+  text-align: justify;
+}
+
+.text-purple {
+  color: var(--primary);
+}
+
+.bg-purple {
+  background-color: var(--primary);
+  color: white;
+}
+
+.aruni 
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/xIH5tc98YOO1Juf1cRcJC/779f61650fac17e6e79e7b0f618c83e5/r6s-operator-aruni.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
+}
+.nomad
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Fue2SumRQEs8Geb2CpWsX/913fbcda744ab9dc719a1440047e4585/R6-operator-nomad.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
+}
+.khaled
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4WdfMUlABk6Pr9FjV3kV4x/42ffacc4a2cd75ff9539dcb00e1e28ee/R6-operator-kaid.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.letrabacana
+{
+  font-family: 'Kanit', sans-serif;
+}
+
+.valkyrie
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5q1yIrIxoddG5pds2Nq3mz/7dc46a59bbfb6959296d01469916f44c/R6-operator-valkyrie.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.valkyrie
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5q1yIrIxoddG5pds2Nq3mz/7dc46a59bbfb6959296d01469916f44c/R6-operator-valkyrie.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
 }
