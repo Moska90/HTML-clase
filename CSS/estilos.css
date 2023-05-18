@@ -22,17 +22,18 @@ body{
 
 .titulillo1
 {
-  font-family: serif;
+  font-family: Ka;
   font-weight: 600;
   font-size: 25px;
   color: white;
   text-underline-offset: none;
+
 }
 
 .textillo
 {
   font-family: serif;
-  font-weight: ;
+  font-weight: 2;
   font-size: 20px;
   color: white;
 }
@@ -67,7 +68,6 @@ background: none;
 }
 
 .hola {
-  
   display: flex;
   height: 100px;
 }
@@ -125,9 +125,21 @@ background-position-x: 90%;
   background-repeat: no-repeat;
   background-position-x: 90%;
 }
-.valkyrie
+.ace
 {
-  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5q1yIrIxoddG5pds2Nq3mz/7dc46a59bbfb6959296d01469916f44c/R6-operator-valkyrie.png);
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3VknamIo6E87ELFbLqk1dx/a54751fe2435104ed35b5e6ee660ef72/r6s-operator-ace.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.ela
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3cpkHAvjm3RLhEoTqs090m/35a7595eb2f2431213656d66da8a9af8/R6-operator-ela.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.nokk
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5X4tMHTglYiy22CYHvvn6b/74f36f4695c6f1eb79533be5e9f97002/R6-operator-nokk.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
 }
