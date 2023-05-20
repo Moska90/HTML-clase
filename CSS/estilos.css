@@ -118,6 +118,20 @@ background: none;
   margin-left: 20px;
   text-shadow: 3px 3px rgb(0, 0, 0, 0.75);
 }
+
+.letrabacanamaps3
+{
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  color: var(--mapas);
+  font-style: italic;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: -390px;
+  text-shadow: 5px 5px rgb(0, 0, 0, 0.75);
+}
+
 .iana 
 {
 background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fiy7YExswMn1Cf13GUU9t/7bb697bf32c0d79c2852b354e3045fff/r6s-operator-iana.png);
@@ -171,8 +185,7 @@ background-position-x: 90%;
 
 .footabajo
 {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
   width: 100%;
 }
 
