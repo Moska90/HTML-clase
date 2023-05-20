@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 body{
   width:100%;
   height:100%;
@@ -6,12 +10,6 @@ body{
   overflow-x: hidden;
   font-family: "Lato", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
-
-.imagelogo
-{
-  width:260px;
-}
 .titulillo
 {
   font-family: serif;
@@ -19,17 +17,17 @@ body{
   font-size: 100px;
   color: white;
 }
-
+.colorfoot
+{
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .titulillo1
 {
   font-family: Ka;
   font-weight: 600;
   font-size: 25px;
   color: white;
-  text-underline-offset: none;
-
 }
-
 .textillo
 {
   font-family: serif;
@@ -46,11 +44,6 @@ body{
 }
 .textoblanco{
     color: white;
-}
-
-.botoncabezera{
-  text-align: bottom;
-  align-items: bottom;
 }
 
 .darker{
@@ -71,29 +64,64 @@ background: none;
   display: flex;
   height: 100px;
 }
-
-.iana 
+.margin-r
 {
-background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fiy7YExswMn1Cf13GUU9t/7bb697bf32c0d79c2852b354e3045fff/r6s-operator-iana.png);
-background-repeat: no-repeat;
-background-position-x: 90%;
+  margin-left: -12px;
 }
-
 :root {
-  --primary: #e02424;
+  --primary: #222964;
+  --mapas: rgb(207, 241, 223)
+  ;
 }
 
 .justify {
   text-align: justify;
 }
-
 .text-purple {
   color: var(--primary);
 }
 
 .bg-purple {
   background-color: var(--primary);
-  color: white;
+  color: var(--mapas);
+}
+.letrabacana
+{
+  font-family: 'Kanit', sans-serif;
+}
+.posicionoregon
+{
+  position: relative;
+}
+.letrabacanamaps
+{
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  color: var(--mapas);
+  font-style: italic;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: -500px;
+  margin-left: 20px;
+  text-shadow: 5px 5px rgb(0, 0, 0, 0.75);
+}
+.letrabacanamaps2
+{
+  text-align: center;
+  color: var(--mapas);
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  margin-left: 20px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.75);
+}
+.iana 
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fiy7YExswMn1Cf13GUU9t/7bb697bf32c0d79c2852b354e3045fff/r6s-operator-iana.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
 }
 
 .aruni 
@@ -113,10 +141,6 @@ background-position-x: 90%;
   background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4WdfMUlABk6Pr9FjV3kV4x/42ffacc4a2cd75ff9539dcb00e1e28ee/R6-operator-kaid.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
-}
-.letrabacana
-{
-  font-family: 'Kanit', sans-serif;
 }
 
 .valkyrie
@@ -142,4 +166,69 @@ background-position-x: 90%;
   background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5X4tMHTglYiy22CYHvvn6b/74f36f4695c6f1eb79533be5e9f97002/R6-operator-nokk.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
+}
+
+.footabajo
+{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.imgmaps
+{
+  position: relative;
+  top: 100px;
+}
+.imgmaps1
+{
+  position: relative;
+  top: 200px;
+}
+
+/* weapons */
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
 }
