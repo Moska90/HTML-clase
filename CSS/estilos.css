@@ -199,3 +199,10 @@ background-position-x: 90%;
   position: relative;
   top: 200px;
 }
+
+.fo{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
