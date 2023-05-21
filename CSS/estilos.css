@@ -1,15 +1,17 @@
+/* Fuentes importadas */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 html, body{
-  max-width: 100%;
+  max-width: 100vw;
   height: 100%;
   background-image: url(https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg);
   background-repeat: repeat;
   overflow-x: hidden;  
   font-family: "Lato", sans-serif;
 }
+/* TEXTOS */
 .titulillo
 {
   font-family: serif;
@@ -17,10 +19,7 @@ html, body{
   font-size: 100px;
   color: white;
 }
-.colorfoot
-{
-  background-color: rgba(0, 0, 0, 0.2);
-}
+
 .titulillo1
 {
   font-family: Ka;
@@ -45,29 +44,20 @@ html, body{
 .textoblanco{
     color: white;
 }
-
-.darker{
-background-color: transparent;
-background: none;
-}
-
 .leftmenu{
   align-items: baseline;
 }
-
+/* AUXILIARES */
 .peque{
   width: 300px;
   height: 40px
-}
-
-.hola {
-  display: flex;
-  height: 100px;
 }
 .margin-r
 {
   margin-left: -12px;
 }
+
+/* VARS */
 :root {
   --primary: #222964;
   --mapas: rgb(207, 241, 223)
@@ -86,13 +76,11 @@ background: none;
   background-color: var(--primary);
   color: var(--mapas);
 }
+/* FUENTES DE LETRA */
+
 .letrabacana
 {
   font-family: 'Kanit', sans-serif;
-}
-.posicionoregon
-{
-  position: relative;
 }
 .letrabacanamaps
 {
@@ -132,6 +120,8 @@ background: none;
   text-shadow: 5px 5px rgb(0, 0, 0, 0.75);
 }
 
+
+/* IMAGENES DE LOS OPERADORES */
 .iana 
 {
 background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fiy7YExswMn1Cf13GUU9t/7bb697bf32c0d79c2852b354e3045fff/r6s-operator-iana.png);
@@ -183,13 +173,18 @@ background-position-x: 90%;
   background-position-x: 90%;
 }
 
+
+/* FOOTER E IMAGENES */
+.colorfoot
+{
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .footabajo
 {
   position: fixed;
   width: 100%;
   bottom: 0;
 }
-
 .imgmaps
 {
   position: relative;
