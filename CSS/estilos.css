@@ -187,19 +187,18 @@ background-position-x: 90%;
 {
   position: fixed;
   width: 100%;
+  bottom: 0;
 }
 
 .imgmaps
 {
   position: relative;
   top: 100px;
-  max-width: fit-content;
 }
 .imgmaps1
 {
   position: relative;
   top: 200px;
-  max-width: fit-content;
 }
 
 .fo{
@@ -208,4 +207,9 @@ background-position-x: 90%;
   width: 100%;
   left: 0px;
   position: fixed;
+}
+
+.img1{
+  width: max-content;
+  right: 0;
 }
