@@ -193,11 +193,13 @@ background-position-x: 90%;
 {
   position: relative;
   top: 100px;
+  max-width: fit-content;
 }
 .imgmaps1
 {
   position: relative;
   top: 200px;
+  max-width: fit-content;
 }
 
 .fo{
