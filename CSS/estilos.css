@@ -1,15 +1,17 @@
-body{
-  width:100%;
-  height:100%;
-  background-image: url(/Images/fondo.jpg);
-  background-repeat: no-repeat;
-  overflow-x: hidden;
-}
+/* Fuentes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-.imagelogo
-{
-  width:260px;
+html, body{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg);
+  background-repeat: repeat;
+  overflow-x: hidden;  
+  font-family: "Lato", sans-serif;
 }
+/* TEXTOS */
 .titulillo
 {
   font-family: serif;
@@ -20,84 +22,191 @@ body{
 
 .titulillo1
 {
-  font-family: serif;
-  font-weight: 900;
-  font-size: 50px;
+  font-family: 'kanit', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
   color: white;
 }
-
 .textillo
 {
   font-family: serif;
-  font-weight: 900;
-  font-size: 100px;
+  font-weight: 2;
+  font-size: 20px;
+  color: white;
+}
+.textillito
+{
+  font-family: serif;
+  font-weight: 90;
+  font-size: 17px;
   color: white;
 }
 .textoblanco{
     color: white;
 }
-
-.botoncabezera{
-  text-align: bottom;
-  align-items: bottom;
-}
-
-.darker{
-background-color: transparent;
-background: none;
-}
-
 .leftmenu{
   align-items: baseline;
 }
-
+/* AUXILIARES */
 .peque{
   width: 300px;
   height: 40px
 }
+.margin-r
+{
+  margin-left: -12px;
+}
 
-.footer{
+/* VARS */
+:root {
+  --primary: #222964;
+  --mapas: rgb(207, 241, 223)
+  ;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.text-purple {
+  color: var(--primary);
+}
+
+.bg-purple {
+  background-color: var(--primary);
+  color: var(--mapas);
+}
+/* FUENTES DE LETRA */
+
+.letrabacana
+{
+  font-family: 'Kanit', sans-serif;
+}
+.letrabacanamaps
+{
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  color: var(--mapas);
+  font-style: italic;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: -500px;
+  margin-left: 20px;
+  text-shadow: 5px 5px rgb(0, 0, 0, 0.75);
+}
+.letrabacanamaps2
+{
+  text-align: center;
+  color: var(--mapas);
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  margin-left: 20px;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.75);
+}
+
+.letrabacanamaps3
+{
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  color: var(--mapas);
+  font-style: italic;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  margin-top: -390px;
+  text-shadow: 5px 5px rgb(0, 0, 0, 0.75);
+}
+
+
+/* IMAGENES DE LOS OPERADORES */
+.iana 
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6Fiy7YExswMn1Cf13GUU9t/7bb697bf32c0d79c2852b354e3045fff/r6s-operator-iana.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
+}
+
+.aruni 
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/xIH5tc98YOO1Juf1cRcJC/779f61650fac17e6e79e7b0f618c83e5/r6s-operator-aruni.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
+}
+.nomad
+{
+background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Fue2SumRQEs8Geb2CpWsX/913fbcda744ab9dc719a1440047e4585/R6-operator-nomad.png);
+background-repeat: no-repeat;
+background-position-x: 90%;
+}
+.khaled
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4WdfMUlABk6Pr9FjV3kV4x/42ffacc4a2cd75ff9539dcb00e1e28ee/R6-operator-kaid.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+
+.valkyrie
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5q1yIrIxoddG5pds2Nq3mz/7dc46a59bbfb6959296d01469916f44c/R6-operator-valkyrie.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.ace
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3VknamIo6E87ELFbLqk1dx/a54751fe2435104ed35b5e6ee660ef72/r6s-operator-ace.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.ela
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3cpkHAvjm3RLhEoTqs090m/35a7595eb2f2431213656d66da8a9af8/R6-operator-ela.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+.nokk
+{
+  background-image: url(https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5X4tMHTglYiy22CYHvvn6b/74f36f4695c6f1eb79533be5e9f97002/R6-operator-nokk.png);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+}
+
+
+/* FOOTER E IMAGENES */
+.colorfoot
+{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.footabajo
+{
   width: 100%;
-  height: 100px;
-  background-color: solid black;
-  color: solid black;
-}
-
-.hola {
-  
-  display: flex;
-  height: 100px;
-}
-.image {
-  width: 350px;
-  height: 250px;
-  background-image: url('https://via.placeholder.com/350x250/00ff00/ffffff');
-  background-size: cover;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-.image:hover {
-  transform: scale(1.1);
-}
-
-.image1 {
-  width: 350px;
-  height: 250px;
-  cursor: pointer;
-  transition: all 1s ease;
-  background-image: url('https://via.placeholder.com/350x250/0000ff/ffffff');
-}
-.image2 {
-  width: 350px;
-  height: 250px;
-  cursor: pointer;
-  transition: all 1s ease;
-  background-image: url('https://via.placeholder.com/350x250/ff0000/ffffff');
-}
-
-.footer {
-  position: absolute;
   bottom: 0;
+}
+.imgmaps
+{
+  position: relative;
+  top: 100px;
+}
+.imgmaps1
+{
+  position: relative;
+  top: 200px;
+}
+.fo{
   width: 100%;
-  height: 60px;
+  left: 0px;
+}
+.abajocentro
+{
+  margin-top: 20%;
+  text-align: center;
+  
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
